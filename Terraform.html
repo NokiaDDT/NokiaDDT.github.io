@@ -1,0 +1,22 @@
+from  [Terraform vs. CloudFormation, Heat, etc. ](https://www.terraform.io/intro/vs/cloudformation.html)
+
+與 CloudFormation, Heat類似，但是有以下兩點優點：
+
+Enabling multiple providers and services to be combined and composed.
+允許同時架構混合系統，如 AWS + OpenStack。
+
+Terraform also separates the planning phase from the execution phase.
+可以透過 plan 階段視覺化執行項目，了解規劃是否正確。
+
+Installation
+1. 下載zip檔案
+wget https://releases.hashicorp.com/terraform/0.12.2/terraform_0.12.2_linux_amd64.zip
+
+2. 解壓縮
+unzip terraform_0.12.2_linux_amd64.zip
+
+3. 搬移到某個地方
+move terraform xxxxx
+
+4. 在 .profile設定PATH參數
+export PATH="$PATH:xxxxx"
