@@ -4,45 +4,33 @@
 參考 Reference 1，依照下列步驟安裝 Node.js 12.x。
 
 <h4>1. 安裝 Node.js </h4><p/>
-'''
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install -y nodejs
-'''
+<script src="https://gist.github.com/NokiaDDT/3dda56fbe6249e8014071ca6ffc38c2b.js?file=install_node.js_12.x.sh"></script>
 
 <h4>2. You may also need development tools to build native addons.</h4><p/>
-'''
-sudo apt-get install -y build-essential gcc g++ make
-'''
+<script src="https://gist.github.com/NokiaDDT/3dda56fbe6249e8014071ca6ffc38c2b.js?file=install_development_tools.sh"></script>
 
 <h4>3. 安裝 Yarn Package Manager</h4><p/>
-'''
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get install yarn
-'''
+<script src="https://gist.github.com/NokiaDDT/3dda56fbe6249e8014071ca6ffc38c2b.js?file=install_yarn_package_manager.sh"></script>
 
 <h2>安裝 Express </h2><p/>
 參考 Reference 2，依照下列步驟進行安裝 Express 4.17.1
 
 <h4>1. Express 需要跟隨在應用程式上，所以需要先建立應用程式資料夾</h4><p/>
-'''
-mkdir myapp
-cd myapp
-'''
+<script src="https://gist.github.com/NokiaDDT/3dda56fbe6249e8014071ca6ffc38c2b.js?file=install_express_01.sh"></script>
 
 <h4>2. 使用 npm init 指令建立 package.json 檔案。請參考<a href="https://docs.npmjs.com/files/package.json"> Specifics of npm’s package.json handling</a> 了解 package.json 運作細節</h4><p/>
-'''
-npm init
-'''
+<script src="https://gist.github.com/NokiaDDT/3dda56fbe6249e8014071ca6ffc38c2b.js?file=install_express_02.sh"></script>
 
-<h4>3. 開始安裝 express ，並使用 --save指令 to save it in the dependencies list.</h4><p/>
-'''
-npm install express --save
-'''
+<h4>3. 建立過程會有許多資訊需要輸入</h4><p/>
+<script src="https://gist.github.com/NokiaDDT/3dda56fbe6249e8014071ca6ffc38c2b.js?file=install_express_03.sh"></script>
+
+<h4>4. 開始安裝 express ，並使用 --save指令 to save it in the dependencies list.</h4><p/>
+<script src="https://gist.github.com/NokiaDDT/3dda56fbe6249e8014071ca6ffc38c2b.js?file=install_express_04.sh"></script>
 
 
 <h3>Reference</h3><p/>
 1. <a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall"> Node.js Installation </a><p/>
-2. <a href="https://expressjs.com/en/starter/installing.html"> Express Installation </a>
+2. <a href="https://expressjs.com/en/starter/installing.html"> Express Installation </a><p/>
+3. <a href="https://www.nodebeginner.org/index-zh-tw.html">Node入門</a><p/>
 
 
