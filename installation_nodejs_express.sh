@@ -25,3 +25,8 @@ entry point: (index.js)
 
 ## Now install Express in the myapp directory and save it in the dependencies list. For example:
 npm install express --save
+
+## You can run the application generator with the npx command (available in Node.js 8.2.0).
+npx express-generator
+## For earlier Node versions, install the application generator as a global npm package and then launch it.
+npm install -g express-generator
